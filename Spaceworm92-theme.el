@@ -1,12 +1,6 @@
 (deftheme Spaceworm92
   "Created 2023-03-13.")
 
-;; My little theme I made with the theme editor 
-
-;; Requirements:
-;; highlight-operators, highlight-parenthesis, highlight-numbers
-;; packages 
-
 (custom-theme-set-faces
  'Spaceworm92
  '(cursor ((t (:background "#dcdccc"))))
@@ -14,7 +8,7 @@
  '(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))
  '(escape-glyph ((t (:foreground "cornflower blue"))))
  '(homoglyph ((t (:foreground "cornflower blue"))))
- '(minibuffer-prompt ((t (:foreground "#61CE3C" :background "#000000"))))
+ '(minibuffer-prompt ((t (:background "#000000" :foreground "light green"))))
  '(highlight ((t (:background "#333333"))))
  '(region ((t (:extend t :background "#7F073F"))))
  '(shadow ((((class color grayscale) (min-colors 88) (background light)) (:foreground "grey50")) (((class color grayscale) (min-colors 88) (background dark)) (:foreground "grey70")) (((class color) (min-colors 8) (background light)) (:foreground "green")) (((class color) (min-colors 8) (background dark)) (:foreground "yellow"))))
@@ -31,16 +25,16 @@
  '(font-lock-negation-char-face ((t (:foreground "medium orchid"))))
  '(font-lock-preprocessor-face ((t (:foreground "#919191"))))
  '(font-lock-regexp-grouping-backslash ((t (:foreground "#E9C062"))))
- '(font-lock-regexp-grouping-construct ((t (:foreground "#ff0000"))))
+ '(font-lock-regexp-grouping-construct ((t (:foreground "indian red"))))
  '(font-lock-string-face ((t (:foreground "cornflower blue"))))
  '(font-lock-type-face ((t (:foreground "white"))))
  '(font-lock-variable-name-face ((t (:foreground "dark gray"))))
  '(font-lock-warning-face ((t (:foreground "indian red"))))
  '(button ((t (:underline t))))
  '(link ((t (:foreground "cornflower blue" :underline t :weight bold))))
- '(link-visited ((t (:weight normal :underline (:color foreground-color :style line) :foreground "#d0bf8f"))))
+ '(link-visited ((t (:foreground "#d0bf8f" :underline t :weight normal))))
  '(fringe ((t (:foreground "#dcdccc" :background "#2b2b2b"))))
- '(header-line ((t (:box (:line-width (1 . -1) :color nil :style released-button) :foreground "#ffff00" :background "#2b2b2b"))))
+ '(header-line ((t (:background "#2b2b2b" :foreground "light green" :box (:line-width (1 . -1) :style released-button)))))
  '(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
  '(mode-line ((t (:box (:line-width (1 . -1) :color "#4c83ff" :style nil) :foreground "#4c83ff" :background "#333333"))))
  '(mode-line-buffer-id ((t (:weight bold))))
@@ -49,13 +43,13 @@
  '(mode-line-inactive ((t (:box (:line-width (1 . -1) :color "#4c83ff" :style nil) :foreground "#4D4D4D" :background "#1A1A1A"))))
  '(isearch ((t (:foreground "#000000" :background "#ff1493"))))
  '(isearch-fail ((t (:background "#8b0000"))))
- '(lazy-highlight ((t (:foreground "#000000" :background "#ffff00"))))
- '(match ((t (:foreground "#ff1493" :background "#000000"))))
+ '(lazy-highlight ((t (:background "#ff1493" :foreground "#000000"))))
+ '(match ((t (:background "#000000" :foreground "cornflower blue"))))
  '(next-error ((t (:inherit (region)))))
  '(query-replace ((t (:background "#333333"))))
  '(highlight-numbers-number ((t (:inherit font-lock-constant-face))))
- '(default ((t (:inherit nil :extend nil :stipple nil :background "#000000" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "ibm" :family "vga"))))
  '(highlight-operators-face ((t (:foreground "light green"))))
- '(highlight-parentheses-highlight ((t (:foreground "light green")))))
+ '(highlight-parentheses-highlight ((t (:foreground "light green"))))
+ '(default ((t (:inherit nil :extend nil :stipple nil :background "#000000" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "ibm" :family "vga")))))
 
 (provide-theme 'Spaceworm92)
